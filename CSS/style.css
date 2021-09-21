@@ -1,0 +1,80 @@
+body{
+    background: #121212;
+    color:white;
+}
+#container{
+    width:700px;
+    height:100%;
+    border-radius:20px;
+    margin-top:100px;
+}
+h1{
+    margin-bottom:20px;
+    text-align:center;
+}
+#expression input{
+    background-color:dimgray;
+    height:60px;
+    margin-bottom:20px;
+    padding:10px;
+    text-align:right;
+    border-radius:10px;
+    font-size:30px;
+    box-shadow:0px 5px 10px #444444 inset ;
+}
+#standard-buttons{
+    display:inline-block;
+    /* margin-left: -20px; */
+    margin-bottom:10px;
+}
+.btn{
+    box-shadow:0px 5px 10px #222222;
+}
+.button-row div{
+    width:60px;
+    height:60px;
+    text-align:center;
+    line-height:60px;
+    margin:5px;
+}
+.button-row .btn{
+    width:60px;
+    height:60px;
+    background-color:dimgray
+}
+.button-orange{
+    background:orange !important;
+    color: white !important;
+}
+.button-orange:hover{
+    background:gold !important;
+}
+.button-blue{
+    background:dodgerblue !important;
+    color:white !important;
+}
+.button-blue:hover{
+    background: lightseagreen !important;
+}
+#calc-history{
+    float:right;
+    background: dimgray;
+    width:280px;
+    height: 360px;
+    border-radius: 8px;
+    margin-top:-370px;
+    padding:10px;
+    box-shadow:0px 5px 10px #444444 inset;
+}
+#calc-history hr{
+    margin-top:5px;
+    margin-bottom: 5px;
+    background-color:white;
+}
+/* #history-box{
+    width:180px !important;
+    height:220px !important;
+    resize: none;
+    /* overflow: hidden;
+    color:white;
+} */

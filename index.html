@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator UI</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <div class="container bg-dark" id="container">
+        <div>
+            <h1>CASIO</h1>
+        </div>
+        <div id="expression">
+            <input type="text" placeholder="0" id="output-screen" name="output-screen">
+        </div>
+        <div id="standard-buttons" class="container-fluid">
+            <!-- First row (7,8,9,/,AC(clear button))-->
+            <div class="row button-row">
+                <div class="col-xs-1">
+                    <button id="num-7" class="btn num" onclick="display('7')">7</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="num-8" class="btn num" onclick="display('8')">8</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="num-9" class="btn num" onclick="display('9')">9</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="divide" class="btn num" onclick="display('/')">/</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="clear" class="btn button-orange" onclick="Clear()">AC</button>
+                </div>
+            </div>
+            <!--Second row(4,5,6,*,del(delete button))-->
+            <div class="row button-row">
+                <div class="col-xs-1">
+                    <button id="num-4" class="btn num" onclick="display('4')">4</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="num-5" class="btn num" onclick="display('5')">5</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="num-6" class="btn num" onclick="display('6')">6</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="multiply" class="btn num" onclick="display('*')">*</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="delete" class="btn button-orange" onclick="del()">DEL</button>
+                </div>
+            </div>
+            <!--Third row(1,2,3,-,=(equals))-->
+            <div class="row button-row">
+                <div class="col-xs-1">
+                    <button id="num-1" class="btn num" onclick="display('1')">1</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="num-2" class="btn num" onclick="display('2')">2</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="num-3" class="btn num" onclick="display('3')">3</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="substract" class="btn num" onclick="display('-')">-</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="equals" class="btn button-blue"  onclick="update()">=</button>
+                </div>
+            </div>
+            <!-- 4th row(.,0,(),^)-->
+            <div class="row button-row">
+                <div class="col-xs-1">
+                    <button id="decimal" class="btn num" onclick="display('.')">.</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="num-0" class="btn num" onclick="display('0')">0</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="exponent" class="btn num" onclick="display('^')">^</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="addition" class="btn num" onclick="display('+')">+</button>
+                </div>
+                <div class="col-xs-1">
+                    <button id="zero" class="btn btn-secondary" onclick="display('00')">00</button>
+                </div>
+            </div>
+        </div>
+        <!--calculation history-->
+        <div id="calc-history">
+            <span>Calculation History</span>
+            <hr>
+            <div class="calc-history">
+
+            </div>
+            
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
